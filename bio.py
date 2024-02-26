@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Function to load the dataset
-@st.cache_data
+@st.cache
 def load_data():
     # Adjust the path as per your Streamlit app's file structure
     data = pd.read_excel("modified_dataset.xlsx")
